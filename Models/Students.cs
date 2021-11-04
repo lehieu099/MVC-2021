@@ -14,6 +14,6 @@ namespace MvcMovie.Models
         [DataType(DataType.Date)]
         public DateTime Birth { get; set; }
         public string Gender { get; set; }
-        public decimal Class { get; set; }
+        public string Class { get; set; }
     }
 }
