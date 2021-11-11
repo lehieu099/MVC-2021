@@ -163,36 +163,36 @@ namespace MvcMovie.Models
                         EmployeeName = "Hiếu",
                         PhoneNumber = 0231283
                     },
-                        new Employee
-                        {
-                            EmployeeID = "epl002",
-                            EmployeeName = "Hiếu",
-                            PhoneNumber = 0231283
-                        },
-                        new Employee
-                        {
-                            EmployeeID = "epl003",
-                            EmployeeName = "Hiếu",
-                            PhoneNumber = 0231283
-                        },
-                        new Employee
-                        {
-                            EmployeeID = "epl004",
-                            EmployeeName = "Hiếu",
-                            PhoneNumber = 0231283
-                        },
-                        new Employee
-                        {
-                            EmployeeID = "epl005",
-                            EmployeeName = "Hiếu",
-                            PhoneNumber = 0231283
-                        },
-                        new Employee
-                        {
-                            EmployeeID = "epl006",
-                            EmployeeName = "Hiếu",
-                            PhoneNumber = 0231283
-                        }
+                    new Employee
+                    {
+                        EmployeeID = "epl002",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    },
+                    new Employee
+                    {
+                        EmployeeID = "epl003",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    },
+                    new Employee
+                    {
+                        EmployeeID = "epl004",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    },
+                    new Employee
+                    {
+                        EmployeeID = "epl005",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    },
+                    new Employee
+                    {
+                        EmployeeID = "epl006",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    }
                 );
                 context_employee.SaveChanges();
             }
@@ -216,37 +216,35 @@ namespace MvcMovie.Models
                     },
                     new Product
                     {
-                        ProductId = "prd001",
+                        ProductId = "prd002",
                         ProductName = "Bánh",
                         UnitPrice = 2,
                         Quantity = 1000
                     },
                     new Product
                     {
-                        ProductId = "prd001",
+                        ProductId = "prd003",
                         ProductName = "Bánh",
                         UnitPrice = 2,
                         Quantity = 1000
                     },
                     new Product
                     {
-                        ProductId = "prd001",
+                        ProductId = "prd004",
                         ProductName = "Bánh",
                         UnitPrice = 2,
                         Quantity = 1000
                     },
                     new Product
                     {
-                        ProductId = "prd001",
+                        ProductId = "prd005",
                         ProductName = "Bánh",
                         UnitPrice = 2,
                         Quantity = 1000
                     }
                 );
-                 context_product.SaveChanges();
+                context_product.SaveChanges();
             }
-            //product
-
         }
     }
 }
