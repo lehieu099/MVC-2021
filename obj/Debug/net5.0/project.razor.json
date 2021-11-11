@@ -15619,6 +15619,11 @@
   "RootNamespace": "MvcMovie",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Products\\Details.cshtml",
+      "TargetPath": "Views\\Products\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Students\\Edit.cshtml",
       "TargetPath": "Views\\Students\\Edit.cshtml",
       "FileKind": "mvc"
@@ -15631,6 +15636,16 @@
     {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Movies\\Delete.cshtml",
       "TargetPath": "Views\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Products\\Create.cshtml",
+      "TargetPath": "Views\\Products\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Products\\Edit.cshtml",
+      "TargetPath": "Views\\Products\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15659,6 +15674,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Employees\\Edit.cshtml",
+      "TargetPath": "Views\\Employees\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -15674,13 +15694,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Employees\\Create.cshtml",
+      "TargetPath": "Views\\Employees\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Persons\\Edit.cshtml",
       "TargetPath": "Views\\Persons\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Products\\Index.cshtml",
+      "TargetPath": "Views\\Products\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Movies\\Index.cshtml",
       "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Employees\\Delete.cshtml",
+      "TargetPath": "Views\\Employees\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15696,6 +15731,11 @@
     {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Employees\\Details.cshtml",
+      "TargetPath": "Views\\Employees\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15729,8 +15769,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Employees\\Index.cshtml",
+      "TargetPath": "Views\\Employees\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\duyhi\\source\\repos\\MvcMovie\\Views\\Products\\Delete.cshtml",
+      "TargetPath": "Views\\Products\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

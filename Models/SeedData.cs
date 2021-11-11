@@ -142,8 +142,111 @@ namespace MvcMovie.Models
                         PersonName = "Hiếu"
                     }
                 );
-                    context_person.SaveChanges();
+                context_person.SaveChanges();
             }
+
+            // Employee
+            using (var context_employee = new MvcMovieContext(
+               serviceProvider.GetRequiredService<
+                   DbContextOptions<MvcMovieContext>>()))
+
+            {
+                if (context_employee.Employee.Any())
+                {
+                    return;   // DB has been seeded
+                }
+
+                context_employee.Employee.AddRange(
+                    new Employee
+                    {
+                        EmployeeID = "epl001",
+                        EmployeeName = "Hiếu",
+                        PhoneNumber = 0231283
+                    },
+                        new Employee
+                        {
+                            EmployeeID = "epl002",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl003",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl004",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl005",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl006",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        }
+                );
+                context_employee.SaveChanges();
+            }
+
+            using (var context_product = new MvcMovieContext(
+                   serviceProvider.GetRequiredService<
+                       DbContextOptions<MvcMovieContext>>()))
+            {
+                if (context_product.Product.Any())
+                {
+                    return;   // DB has been seeded
+                }
+
+                context_product.Product.AddRange(
+                    new Product
+                    {
+                        ProductId = "prd001",
+                        ProductName = "Bánh",
+                        UnitPrice = 2,
+                        Quantity = 1000
+                    },
+                    new Product
+                    {
+                        ProductId = "prd001",
+                        ProductName = "Bánh",
+                        UnitPrice = 2,
+                        Quantity = 1000
+                    },
+                    new Product
+                    {
+                        ProductId = "prd001",
+                        ProductName = "Bánh",
+                        UnitPrice = 2,
+                        Quantity = 1000
+                    },
+                    new Product
+                    {
+                        ProductId = "prd001",
+                        ProductName = "Bánh",
+                        UnitPrice = 2,
+                        Quantity = 1000
+                    },
+                    new Product
+                    {
+                        ProductId = "prd001",
+                        ProductName = "Bánh",
+                        UnitPrice = 2,
+                        Quantity = 1000
+                    }
+                );
+                 context_product.SaveChanges();
+            }
+            //product
+
         }
     }
 }
