@@ -14,7 +14,7 @@ namespace MvcMovie.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "5.0.11");
+                .HasAnnotation("ProductVersion", "3.1.9");
 
             modelBuilder.Entity("MvcMovie.Models.Movie", b =>
                 {
@@ -39,7 +39,20 @@ namespace MvcMovie.Migrations
                     b.ToTable("Movies");
                 });
 
-            modelBuilder.Entity("MvcMovie.Models.Students", b =>
+            modelBuilder.Entity("MvcMovie.Models.Person", b =>
+                {
+                    b.Property<string>("PersonId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PersonName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("PersonId");
+
+                    b.ToTable("Person");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.StudentsData", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +66,7 @@ namespace MvcMovie.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Students");
+                    b.ToTable("StudentsData");
                 });
 #pragma warning restore 612, 618
         }

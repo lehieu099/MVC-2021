@@ -14,15 +14,15 @@ namespace MvcMovie.Controllers
     {
         private readonly MvcMovieContext _context;
 
-        public StudentsController(MvcMovieContext contextStudents)
+        public StudentsController(MvcMovieContext context)
         {
-            _context = contextStudents;
+            _context = context;
         }
 
         // GET: Students
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Students.ToListAsync());
+            return View(await _context.StudentsDatas.ToListAsync());
         }
 
         // GET: Students/Details/5
@@ -33,14 +33,14 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            var students = await _context.Students
+            var studentsData = await _context.StudentsDatas
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (students == null)
+            if (studentsData == null)
             {
                 return NotFound();
             }
 
-            return View(students);
+            return View(studentsData);
         }
 
         // GET: Students/Create
@@ -50,19 +50,19 @@ namespace MvcMovie.Controllers
         }
 
         // POST: Students/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Address")] Students students)
+        public async Task<IActionResult> Create([Bind("Id,Name,Address")] StudentsData studentsData)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(students);
+                _context.Add(studentsData);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(students);
+            return View(studentsData);
         }
 
         // GET: Students/Edit/5
@@ -73,22 +73,22 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            var students = await _context.Students.FindAsync(id);
-            if (students == null)
+            var studentsData = await _context.StudentsDatas.FindAsync(id);
+            if (studentsData == null)
             {
                 return NotFound();
             }
-            return View(students);
+            return View(studentsData);
         }
 
         // POST: Students/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address")] Students students)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address")] StudentsData studentsData)
         {
-            if (id != students.Id)
+            if (id != studentsData.Id)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace MvcMovie.Controllers
             {
                 try
                 {
-                    _context.Update(students);
+                    _context.Update(studentsData);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StudentsExists(students.Id))
+                    if (!StudentsDataExists(studentsData.Id))
                     {
                         return NotFound();
                     }
@@ -113,7 +113,7 @@ namespace MvcMovie.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(students);
+            return View(studentsData);
         }
 
         // GET: Students/Delete/5
@@ -124,14 +124,14 @@ namespace MvcMovie.Controllers
                 return NotFound();
             }
 
-            var students = await _context.Students
+            var studentsData = await _context.StudentsDatas
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (students == null)
+            if (studentsData == null)
             {
                 return NotFound();
             }
 
-            return View(students);
+            return View(studentsData);
         }
 
         // POST: Students/Delete/5
@@ -139,15 +139,15 @@ namespace MvcMovie.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var students = await _context.Students.FindAsync(id);
-            _context.Students.Remove(students);
+            var studentsData = await _context.StudentsDatas.FindAsync(id);
+            _context.StudentsDatas.Remove(studentsData);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentsExists(int id)
+        private bool StudentsDataExists(int id)
         {
-            return _context.Students.Any(e => e.Id == id);
+            return _context.StudentsDatas.Any(e => e.Id == id);
         }
     }
 }
