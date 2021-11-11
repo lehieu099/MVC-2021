@@ -14,9 +14,9 @@ namespace MvcMovie.Controllers
     {
         private readonly MvcMovieContext _context;
 
-        public StudentsController(MvcMovieContext context)
+        public StudentsController(MvcMovieContext contextStudents)
         {
-            _context = context;
+            _context = contextStudents;
         }
 
         // GET: Students
@@ -54,7 +54,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Birth,Gender,Class")] Students students)
+        public async Task<IActionResult> Create([Bind("Id,Name,Address")] Students students)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Birth,Gender,Class")] Students students)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address")] Students students)
         {
             if (id != students.Id)
             {

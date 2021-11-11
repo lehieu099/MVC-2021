@@ -45,13 +45,7 @@ namespace MvcMovie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("Birth")
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("Class")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Gender")
+                    b.Property<string>("Address")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
