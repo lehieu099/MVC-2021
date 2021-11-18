@@ -192,54 +192,54 @@ namespace MvcMovie.Models
                     context_employee.SaveChanges();
                 }
 
-                using (var context_product = new MvcMovieContext(
-                       serviceProvider.GetRequiredService<
-                           DbContextOptions<MvcMovieContext>>()))
-                {
-                    if (context_product.Product.Any())
-                    {
-                        return;   // DB has been seeded
-                    }
+                // using (var context_product = new MvcMovieContext(
+                //        serviceProvider.GetRequiredService<
+                //            DbContextOptions<MvcMovieContext>>()))
+                // {
+                //     if (context_product.Product.Any())
+                //     {
+                //         return;   // DB has been seeded
+                //     }
 
-                    context_product.Product.AddRange(
-                        new Product
-                        {
-                            ProductId = "prd001",
-                            ProductName = "Bánh",
-                            UnitPrice = 2,
-                            Quantity = 1000
-                        },
-                        new Product
-                        {
-                            ProductId = "prd002",
-                            ProductName = "Bánh",
-                            UnitPrice = 2,
-                            Quantity = 1000
-                        },
-                        new Product
-                        {
-                            ProductId = "prd003",
-                            ProductName = "Bánh",
-                            UnitPrice = 2,
-                            Quantity = 1000
-                        },
-                        new Product
-                        {
-                            ProductId = "prd004",
-                            ProductName = "Bánh",
-                            UnitPrice = 2,
-                            Quantity = 1000
-                        },
-                        new Product
-                        {
-                            ProductId = "prd005",
-                            ProductName = "Bánh",
-                            UnitPrice = 2,
-                            Quantity = 1000
-                        }
-                    );
-                    context_product.SaveChanges();
-                }
+                //     context_product.Product.AddRange(
+                //         new Product
+                //         {
+                //             ProductId = "prd001",
+                //             ProductName = "Bánh",
+                //             UnitPrice = 2,
+                //             Quantity = 1000
+                //         },
+                //         new Product
+                //         {
+                //             ProductId = "prd002",
+                //             ProductName = "Bánh",
+                //             UnitPrice = 2,
+                //             Quantity = 1000
+                //         },
+                //         new Product
+                //         {
+                //             ProductId = "prd003",
+                //             ProductName = "Bánh",
+                //             UnitPrice = 2,
+                //             Quantity = 1000
+                //         },
+                //         new Product
+                //         {
+                //             ProductId = "prd004",
+                //             ProductName = "Bánh",
+                //             UnitPrice = 2,
+                //             Quantity = 1000
+                //         },
+                //         new Product
+                //         {
+                //             ProductId = "prd005",
+                //             ProductName = "Bánh",
+                //             UnitPrice = 2,
+                //             Quantity = 1000
+                //         }
+                //     );
+                    // context_product.SaveChanges();
+                // }
             }
         }
     }

@@ -16,6 +16,20 @@ namespace MvcMovie.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.9");
 
+            modelBuilder.Entity("MvcMovie.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CategoryName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Categories_1");
+                });
+
             modelBuilder.Entity("MvcMovie.Models.Employee", b =>
                 {
                     b.Property<string>("EmployeeID")
@@ -75,7 +89,25 @@ namespace MvcMovie.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Person");
                 });
 
-           
+            modelBuilder.Entity("MvcMovie.Models.ProductNew", b =>
+                {
+                    b.Property<int>("ProductNewID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProductNewName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ProductNewID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.ToTable("ProductNew_");
+                });
+
             modelBuilder.Entity("MvcMovie.Models.Student", b =>
                 {
                     b.HasBaseType("MvcMovie.Models.Person");
@@ -92,6 +124,15 @@ namespace MvcMovie.Migrations
                     b.ToTable("Persons");
 
                     b.HasDiscriminator().HasValue("Student");
+                });
+
+            modelBuilder.Entity("MvcMovie.Models.ProductNew", b =>
+                {
+                    b.HasOne("MvcMovie.Models.Category", "Categories_")
+                        .WithMany("ProductNew")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

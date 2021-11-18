@@ -180,3 +180,13 @@ C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Delet
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Details.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Edit.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Index.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Details.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Create.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Delete.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Details.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Edit.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Index.cshtml.g.cs
