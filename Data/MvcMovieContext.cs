@@ -16,9 +16,8 @@ namespace MvcMovie.Data
 
         public DbSet<MvcMovie.Models.Movie> Movie { get; set; }
 
-        public DbSet<MvcMovie.Models.StudentsData> StudentsDatas { get; set; }
-
         public DbSet<MvcMovie.Models.Person> Person { get; set; }
+        public DbSet<MvcMovie.Models.Student> Students { get; set; }
 
         public DbSet<MvcMovie.Models.Employee> Employee { get; set; }
 

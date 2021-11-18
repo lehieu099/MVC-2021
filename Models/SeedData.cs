@@ -66,184 +66,180 @@ namespace MvcMovie.Models
                             serviceProvider.GetRequiredService<
                                 DbContextOptions<MvcMovieContext>>()))
             {
-                // Look for any movies.
-                if (context_Student.StudentsDatas.Any())
-                {
-                    return;   // DB has been seeded
-                }
+                //     // Look for any movies.
+                //     if (context_Student.StudentsDatas.Any())
+                //     {
+                //         return;   // DB has been seeded
+                //     }
 
-                context_Student.StudentsDatas.AddRange(
-                    new StudentsData
-                    {
-                        Name = "Hieu Le Duy ",
-                        Address = "Ha Noi ",
-                    },
+                //     context_Student.StudentsDatas.AddRange(
+                //         new StudentsData
+                //         {
+                //             Name = "Hieu Le Duy ",
+                //             Address = "Ha Noi ",
+                //         },
 
-                  new StudentsData
-                  {
-                      Name = "Hieu Le Duy ",
-                      Address = "Ha Noi ",
-                  },
+                //       new StudentsData
+                //       {
+                //           Name = "Hieu Le Duy ",
+                //           Address = "Ha Noi ",
+                //       },
 
-                   new StudentsData
-                   {
-                       Name = "Hieu Le Duy ",
-                       Address = "Ha Noi ",
-                   },
+                //        new StudentsData
+                //        {
+                //            Name = "Hieu Le Duy ",
+                //            Address = "Ha Noi ",
+                //        },
 
-                  new StudentsData
-                  {
-                      Name = "Hieu Le Duy ",
-                      Address = "Ha Noi ",
-                  },
-                       new StudentsData
-                       {
-                           Name = "Hieu Lê Duy ",
-                           Address = "Ha Noi ",
-                       }
-                );
-                context_Student.SaveChanges();
-            }
+                //       new StudentsData
+                //       {
+                //           Name = "Hieu Le Duy ",
+                //           Address = "Ha Noi ",
+                //       },
+                //       new StudentsData
+                //         {
+                //            Name = "Hieu Lê Duy ",
+                //            Address = "Ha Noi ",
+                //         }
+                //     );
+                //     context_Student.SaveChanges();
+                // }
 
-            // Person
-            using (var context_person = new MvcMovieContext(
-               serviceProvider.GetRequiredService<
-                   DbContextOptions<MvcMovieContext>>()))
-            {
-                if (context_person.Person.Any())
-                {
-                    return;   // DB has been seeded
-                }
-
-                context_person.Person.AddRange(
-                    new Person
-                    {
-                        PersonId = "ps001",
-                        PersonName = "Hiếu"
-                    },
-                    new Person
-                    {
-                        PersonId = "ps002",
-                        PersonName = "Hiếu"
-                    },
-                    new Person
-                    {
-                        PersonId = "ps003",
-                        PersonName = "Hiếu"
-                    },
-                    new Person
-                    {
-                        PersonId = "ps004",
-                        PersonName = "Hiếu"
-                    },
-                    new Person
-                    {
-                        PersonId = "ps005",
-                        PersonName = "Hiếu"
-                    }
-                );
-                context_person.SaveChanges();
-            }
-
-            // Employee
-            using (var context_employee = new MvcMovieContext(
-               serviceProvider.GetRequiredService<
-                   DbContextOptions<MvcMovieContext>>()))
-
-            {
-                if (context_employee.Employee.Any())
-                {
-                    return;   // DB has been seeded
-                }
-
-                context_employee.Employee.AddRange(
-                    new Employee
-                    {
-                        EmployeeID = "epl001",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    },
-                    new Employee
-                    {
-                        EmployeeID = "epl002",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    },
-                    new Employee
-                    {
-                        EmployeeID = "epl003",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    },
-                    new Employee
-                    {
-                        EmployeeID = "epl004",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    },
-                    new Employee
-                    {
-                        EmployeeID = "epl005",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    },
-                    new Employee
-                    {
-                        EmployeeID = "epl006",
-                        EmployeeName = "Hiếu",
-                        PhoneNumber = 0231283
-                    }
-                );
-                context_employee.SaveChanges();
-            }
-
-            using (var context_product = new MvcMovieContext(
+                // Person
+                using (var context_person = new MvcMovieContext(
                    serviceProvider.GetRequiredService<
                        DbContextOptions<MvcMovieContext>>()))
-            {
-                if (context_product.Product.Any())
                 {
-                    return;   // DB has been seeded
+                    if (context_person.Person.Any())
+                    {
+                        return;   // DB has been seeded
+                    }
+
+                    context_person.Person.AddRange(
+                        new Person
+                        {
+                            PersonName = "Hiếu"
+                        },
+                        new Person
+                        {
+                            PersonName = "Hiếu"
+                        },
+                        new Person
+                        {
+                            PersonName = "Hiếu"
+                        },
+                        new Person
+                        {
+                            PersonName = "Hiếu"
+                        },
+                        new Person
+                        {
+                            PersonName = "Hiếu"
+                        }
+                    );
+                    context_person.SaveChanges();
                 }
 
-                context_product.Product.AddRange(
-                    new Product
+                // Employee
+                using (var context_employee = new MvcMovieContext(
+                   serviceProvider.GetRequiredService<
+                       DbContextOptions<MvcMovieContext>>()))
+
+                {
+                    if (context_employee.Employee.Any())
                     {
-                        ProductId = "prd001",
-                        ProductName = "Bánh",
-                        UnitPrice = 2,
-                        Quantity = 1000
-                    },
-                    new Product
-                    {
-                        ProductId = "prd002",
-                        ProductName = "Bánh",
-                        UnitPrice = 2,
-                        Quantity = 1000
-                    },
-                    new Product
-                    {
-                        ProductId = "prd003",
-                        ProductName = "Bánh",
-                        UnitPrice = 2,
-                        Quantity = 1000
-                    },
-                    new Product
-                    {
-                        ProductId = "prd004",
-                        ProductName = "Bánh",
-                        UnitPrice = 2,
-                        Quantity = 1000
-                    },
-                    new Product
-                    {
-                        ProductId = "prd005",
-                        ProductName = "Bánh",
-                        UnitPrice = 2,
-                        Quantity = 1000
+                        return;   // DB has been seeded
                     }
-                );
-                context_product.SaveChanges();
+
+                    context_employee.Employee.AddRange(
+                        new Employee
+                        {
+                            EmployeeID = "epl001",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl002",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl003",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl004",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl005",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        },
+                        new Employee
+                        {
+                            EmployeeID = "epl006",
+                            EmployeeName = "Hiếu",
+                            PhoneNumber = 0231283
+                        }
+                    );
+                    context_employee.SaveChanges();
+                }
+
+                using (var context_product = new MvcMovieContext(
+                       serviceProvider.GetRequiredService<
+                           DbContextOptions<MvcMovieContext>>()))
+                {
+                    if (context_product.Product.Any())
+                    {
+                        return;   // DB has been seeded
+                    }
+
+                    context_product.Product.AddRange(
+                        new Product
+                        {
+                            ProductId = "prd001",
+                            ProductName = "Bánh",
+                            UnitPrice = 2,
+                            Quantity = 1000
+                        },
+                        new Product
+                        {
+                            ProductId = "prd002",
+                            ProductName = "Bánh",
+                            UnitPrice = 2,
+                            Quantity = 1000
+                        },
+                        new Product
+                        {
+                            ProductId = "prd003",
+                            ProductName = "Bánh",
+                            UnitPrice = 2,
+                            Quantity = 1000
+                        },
+                        new Product
+                        {
+                            ProductId = "prd004",
+                            ProductName = "Bánh",
+                            UnitPrice = 2,
+                            Quantity = 1000
+                        },
+                        new Product
+                        {
+                            ProductId = "prd005",
+                            ProductName = "Bánh",
+                            UnitPrice = 2,
+                            Quantity = 1000
+                        }
+                    );
+                    context_product.SaveChanges();
+                }
             }
         }
     }

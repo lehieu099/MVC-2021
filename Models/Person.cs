@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMovie.Models
 {
-    [Table("Person")]
+    [Table("Persons")]
     public class Person
     {
         [Key]
-        public string PersonId { get; set; }
+        public int PersonId { get; set; }
         [DisplayName("Tên")]
         public string PersonName { get; set; }
 

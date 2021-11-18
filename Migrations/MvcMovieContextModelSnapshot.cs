@@ -57,7 +57,12 @@ namespace MvcMovie.Migrations
 
             modelBuilder.Entity("MvcMovie.Models.Person", b =>
                 {
-                    b.Property<string>("PersonId")
+                    b.Property<int>("PersonId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PersonName")
@@ -65,43 +70,28 @@ namespace MvcMovie.Migrations
 
                     b.HasKey("PersonId");
 
-                    b.ToTable("Person");
+                    b.ToTable("Persons");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
                 });
 
-            modelBuilder.Entity("MvcMovie.Models.Product", b =>
+           
+            modelBuilder.Entity("MvcMovie.Models.Student", b =>
                 {
-                    b.Property<string>("ProductId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ProductName")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ProductId");
-
-                    b.ToTable("Product");
-                });
-
-            modelBuilder.Entity("MvcMovie.Models.StudentsData", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.HasBaseType("MvcMovie.Models.Person");
 
                     b.Property<string>("Address")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Name")
+                    b.Property<int>("StudentCode")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("University")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.ToTable("Persons");
 
-                    b.ToTable("StudentsData");
+                    b.HasDiscriminator().HasValue("Student");
                 });
 #pragma warning restore 612, 618
         }
