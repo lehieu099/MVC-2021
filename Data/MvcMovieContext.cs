@@ -14,7 +14,6 @@ namespace MvcMovie.Data
         {
         }
 
-        public DbSet<MvcMovie.Models.Movie> Movie { get; set; }
 
         public DbSet<MvcMovie.Models.Person> Person { get; set; }
         public DbSet<MvcMovie.Models.Student> Students { get; set; }
@@ -24,6 +23,8 @@ namespace MvcMovie.Data
         public DbSet<MvcMovie.Models.Category> Category { get; set; }
 
         public DbSet<MvcMovie.Models.ProductNew> ProductNew { get; set; }
+
+        public DbSet<MvcMovie.Models.MoviesNew_> MoviesNew_ { get; set; }
 
        }
 }

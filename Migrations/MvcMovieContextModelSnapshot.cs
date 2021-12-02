@@ -58,6 +58,9 @@ namespace MvcMovie.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Rating")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("TEXT");
 
@@ -66,7 +69,7 @@ namespace MvcMovie.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movies");
+                    b.ToTable("MoviesNew");
                 });
 
             modelBuilder.Entity("MvcMovie.Models.Person", b =>
@@ -115,8 +118,8 @@ namespace MvcMovie.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("StudentCode")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("StudentCode")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("University")
                         .HasColumnType("TEXT");
