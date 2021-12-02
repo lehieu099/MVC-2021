@@ -185,3 +185,8 @@ C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Del
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Details.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Edit.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\ProductNew\Index.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Delete.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
