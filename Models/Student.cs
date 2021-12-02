@@ -7,7 +7,7 @@ namespace MvcMovie.Models
 {
     public class Student : Person
     {
-        public int StudentCode { get; set; }
+        public string StudentCode { get; set; }
         [DisplayName("Địa Chỉ")]
         public string Address { get; set; }
         [DisplayName("Trường")]

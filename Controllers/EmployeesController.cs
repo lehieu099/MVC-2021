@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
-
+using MvcMovie.Models.Process;
 namespace MvcMovie.Controllers
 {
     public class EmployeesController : Controller
     {
         private readonly MvcMovieContext _context;
-
+        private readonly stringProcess strPro = new stringProcess();
         public EmployeesController(MvcMovieContext context)
         {
             _context = context;
@@ -46,6 +46,17 @@ namespace MvcMovie.Controllers
         // GET: Employees/Create
         public IActionResult Create()
         {
+            string newKey = "";
+            //orderby(masv) ?
+            // IEnumerable<Employee> query = Employee.OrderBy(Employee => Employee.EmployeeID);
+
+            // string id="" ;
+            // foreach(Employee employee in query){
+            //     Console.WriteLine("{0}", employee.EmployeeID);
+            // }
+
+            // newKey =strPro.GenerateKey();
+            ViewBag.StudentKey = newKey;
             return View();
         }
 
