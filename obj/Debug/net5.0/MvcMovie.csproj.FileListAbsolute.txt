@@ -170,11 +170,6 @@ C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\_Persons\Delet
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\_Persons\Details.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\_Persons\Edit.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\_Persons\Index.cshtml.g.cs
-C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Create.cshtml.g.cs
-C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Delete.cshtml.g.cs
-C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Details.cshtml.g.cs
-C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Edit.cshtml.g.cs
-C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Students\Index.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Delete.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Category\Details.cshtml.g.cs
@@ -190,3 +185,6 @@ C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Delete.
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Users\duyhi\source\repos\MvcMovie\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
+C:\Users\duyhi\source\repos\MvcMovie\bin\Debug\net5.0\EPPlus.dll
+C:\Users\duyhi\source\repos\MvcMovie\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\duyhi\source\repos\MvcMovie\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
